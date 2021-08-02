@@ -16,9 +16,12 @@
     }
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
     "commitizen": "^4.2.4",
     "core-js": "^3.6.5",
     "cz-conventional-changelog": "^3.3.0",
+    "element-plus": "^1.0.2-beta.65",
     "vue": "^3.0.0",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.2"
