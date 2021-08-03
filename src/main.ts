@@ -4,6 +4,8 @@ import { registerApp } from './global'
 import router from './routers'
 import shRequest from './service'
 import store from './store'
+import 'normalize.css'
+import './assets/css/index.less'
 
 const app = createApp(App)
 
