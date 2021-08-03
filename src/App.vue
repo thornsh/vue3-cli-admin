@@ -1,5 +1,7 @@
 <template>
   <div class="app">
+    {{ testValue }}
+    <test-page v-model="testValue"></test-page>
     <router-link to="/login">登录</router-link>
     <router-link to="main">首页</router-link>
     <router-view></router-view>
@@ -7,11 +9,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import testPage from './views/test-page/test-page.vue'
 
 export default defineComponent({
   name: 'App',
-  components: {}
+  components: {
+    testPage
+  },
+  setup() {
+    const testValue = ref('testValue')
+
+    return {
+      testValue
+    }
+  }
 })
 </script>
 
